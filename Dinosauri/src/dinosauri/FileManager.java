@@ -15,23 +15,23 @@ import java.util.Arrays;
  * @author ficarra.gabriele
  */
 public class FileManager {
-    ArrayList<String[]> righe = new ArrayList<>();
+    ArrayList<Carta> righe = new ArrayList<>();
     String filePath = "mazzo.txt";
     
-    public ArrayList<String[]> leggiFile(){
+    public ArrayList<Carta> leggiFile(){
         try(BufferedReader r = new BufferedReader(new FileReader(filePath))){
             
             String riga;
             
             while ((riga = r.readLine()) != null) {
                 String[] valori = riga.split(",");
-                righe.add(valori);
+                righe.add(valori); //Aggiusta sta parte
             }
         } catch (IOException e) {
             System.err.println("Errore nella lettura del file");
         }
-        for (String[] riga : righe) {
-                System.out.println(Arrays.toString(riga));
+        for (Carta riga : righe) {
+                System.out.println(riga);
         }
         return righe;
     }

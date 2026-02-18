@@ -4,14 +4,10 @@
  */
 package dinosauri;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author ficarra.gabriele
  */
 public class Mazzo {
-    
-    ArrayList<Carta> Mazzo = new ArrayList<>();
-    
+       
 }

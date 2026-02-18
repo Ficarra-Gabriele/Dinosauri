@@ -18,7 +18,8 @@ public class Dinosauri {
     public static void main(String[] args) {
         
         FileManager f = new FileManager();
-        ArrayList<String[]> dati  = f.leggiFile();
+        ArrayList<Carta> dati  = f.leggiFile();
+        
     }
     
 }

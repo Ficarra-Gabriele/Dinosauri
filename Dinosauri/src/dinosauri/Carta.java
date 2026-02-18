@@ -10,4 +10,5 @@ package dinosauri;
  */
 public class Carta {
     
+    
 }

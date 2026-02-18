@@ -4,6 +4,8 @@
  */
 package dinosauri;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author ficarra.gabriele
@@ -16,7 +18,7 @@ public class Dinosauri {
     public static void main(String[] args) {
         
         FileManager f = new FileManager();
-        f.leggiFile();
+        ArrayList<String[]> dati  = f.leggiFile();
     }
     
 }

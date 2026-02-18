@@ -9,17 +9,16 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 /**
  *
  * @author ficarra.gabriele
  */
 public class FileManager {
-    List<String[]> righe = new ArrayList<>();
+    ArrayList<String[]> righe = new ArrayList<>();
     String filePath = "mazzo.txt";
     
-    public void leggiFile(){
+    public ArrayList<String[]> leggiFile(){
         try(BufferedReader r = new BufferedReader(new FileReader(filePath))){
             
             String riga;
@@ -34,5 +33,6 @@ public class FileManager {
         for (String[] riga : righe) {
                 System.out.println(Arrays.toString(riga));
         }
+        return righe;
     }
 }
